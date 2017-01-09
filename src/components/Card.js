@@ -6,26 +6,15 @@ import {
   Image,
 } from 'react-native';
 
-import Header from './Header';
-import Footer from './Footer';
-
 class Card extends React.Component {
   render() {
 
-    const imageSource = require('./../../assets/puppy_03.jpg');
     return (
       // This is the parent container of the App
-      <View style={{ flex: 1}}>
-
-        <Header />
-
-        <View style={styles.cardStyle}>
-          <Image source={imageSource} style={styles.imageStyle} />
-          <Text>Alexandra, 24</Text>
-          <Text>I am the best marketing expert!</Text>
-        </View>
-
-        <Footer />
+      <View style={styles.cardStyle}>
+        <Image source={this.props.thumbnail} style={styles.imageStyle} />
+        <Text>{this.props.name},{this.props.age}</Text>
+        <Text>I am the best marketing expert ever!</Text>
       </View>
     );
   }
