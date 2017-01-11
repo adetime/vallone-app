@@ -21,9 +21,7 @@ class CardList extends React.Component {
       // This is the parent container of the App
       <View style={{ flex: 1}}>
         <Header />
-        <Card thumbnail={imageSource1} name='John' age='46' />
-        <Card thumbnail={imageSource2} name='Maria' age='23' />
-        <Card thumbnail={imageSource3} name='Adeildo' age='36' />
+        <Card thumbnail={imageSource1} name='John' age='46' />      
         <Footer />
       </View>
     );
